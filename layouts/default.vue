@@ -2,7 +2,7 @@
   <div class="w-full h-full overflow-x-hidden">
     <NavBar/>
     <UIImageWrapper class="overflow-x-clip"/>
-    <div class="mx-[100px] flex flex-col gap-5 ">
+    <div class="lg:mx-[100px] flex flex-col gap-5 ">
       <slot />
     </div>
     <NavFooter/>

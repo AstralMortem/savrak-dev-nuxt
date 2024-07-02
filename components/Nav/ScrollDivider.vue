@@ -19,27 +19,27 @@ const styleHeight = computed(()=>{
   }
 })
 
-const options = {
-        root: null, // relative to document viewport
-        rootMargin: '0px',
-        threshold: 0.1 // 10% of the div must be visible
-      };
+// const options = {
+//         root: null, // relative to document viewport
+//         rootMargin: '0px',
+//         threshold: 0.1 // 10% of the div must be visible
+//       };
 
-const observer = new IntersectionObserver((entries, observer) => {
-  console.log(entries)
-}, options)
+// const observer = new IntersectionObserver((entries, observer) => {
+//   console.log(entries)
+// }, options)
 
-function onScroll(){
-  observer.observe(el.value)
-}
+// function onScroll(){
+//   observer.observe(el.value)
+// }
 
-onMounted(()=>{
-  document.addEventListener("scroll", onScroll)
-})
+// onMounted(()=>{
+//   document.addEventListener("scroll", onScroll)
+// })
 
-onUnmounted(()=>{
-  document.removeEventListener("scroll", onScroll)
-})
+// onUnmounted(()=>{
+//   document.removeEventListener("scroll", onScroll)
+// })
 
 </script>
 

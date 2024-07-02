@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex flex-col ">
+  <div class="w-full h-full flex flex-col lg:flex-row gap-4 flex-wrap justify-center ">
     <SkillsCard v-for="(skill, idx) in $props.data" :title="skill.title" :tech-list="skill.techList"/>
   </div>
 </template>

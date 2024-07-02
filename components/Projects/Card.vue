@@ -1,12 +1,12 @@
 <template>
   <UICard>
-    <div class="w-full h-full flex flex-row justify-between items-start">
-      <div class="flex flex-col justify-start items-start gap-4">
+    <div class="w-full h-full flex flex-col-reverse gap-4 md:flex-row justify-start md:justify-between items-center md:items-start">
+      <div class="flex flex-col justify-start items-center lg:items-start gap-4 w-full lg:w-1/2">
         <div class="flex flex-row justify-start items-center gap-4">
           <UIImage :src="$props.logo" class=" w-16 h-16 "/>
           <UIP size="5xl" bold="semibold" color="text-neutral-900 dark:text-green-600">{{ $props.title }}</UIP>
         </div>
-        <div class="flex flex-row justify-start items-center gap-2">
+        <div class="flex flex-row justify-start items-center gap-2 flex-wrap">
           <ProjectsTechStack v-for="item in $props.techStack" :name="item"/>
         </div>
         <UIP color="text-neutral-900 dark:text-white">{{ $props.description }}</UIP>

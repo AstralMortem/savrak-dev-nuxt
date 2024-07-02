@@ -1,8 +1,8 @@
 <template>
-  <UICard>
-    <div class="flex flex-col gap-4 justify-start items-start">
+  <UICard class="h-fit max-w-[400px] md:w-fit">
+    <div class="flex flex-col gap-4 justify-start items-start h-fit w-fit">
       <UIP bold="semibold" size="3xl" color="text-neutral-400 dark:text-neutral-200">{{ $props.title?.toUpperCase() }}</UIP>
-      <div class="flex flex-row justify-start items-center gap-2">
+      <div class="flex flex-row flex-wrap justify-start items-center gap-2">
         <SkillsTech v-for="tech in $props.techList" :name="tech"/>
       </div>
     </div>

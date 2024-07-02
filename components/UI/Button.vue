@@ -1,5 +1,5 @@
 <template>
-  <div class="h-min p-3  justify-center items-center gap-2 inline-flex text-white cursor-pointer hover:shadow-lg hover:shadow-primary-400 dark:hover:shadow-green-400" :class="[roundedVariant,$props.color, typeVariant]">
+  <div class="h-min p-3  justify-center items-center gap-2 inline-flex text-white cursor-pointer hover:shadow-lg hover:shadow-primary-400 dark:hover:shadow-green-400" :class="[roundedVariant,$props.color, typeVariant]" @click="goRoute">
       <UIIcon v-if="$props.leadingIcon" :name="$props.leadingIcon" class="text-2xl"/>
       <UIP v-if="!$props.onlyIcon" :color="$props.color" bold="semibold"><slot /></UIP>
       <UIIcon v-if="$props.trailingIcon" :name="$props.trailingIcon" class="text-2xl"/>
@@ -7,6 +7,7 @@
 </template>
 
 <script lang="ts" setup>
+const router = useRouter()
 const props = defineProps({
   trailingIcon: String, 
   leadingIcon: String,
@@ -44,7 +45,11 @@ const typeVariant = computed(()=>{
   }
 })
 
-
+const goRoute = () =>{
+  if(props.to){
+    router.push(props.to)
+  }
+}
 
 
 </script>

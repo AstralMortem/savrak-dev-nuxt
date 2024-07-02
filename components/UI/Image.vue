@@ -1,5 +1,5 @@
 <template>
-  <img :src="imageURL" @error="imageURL='/img/not-found.png'">
+  <img :src="$props.src" >
 </template>
 
 <script lang="ts" setup>
