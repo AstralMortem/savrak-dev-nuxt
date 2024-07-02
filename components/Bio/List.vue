@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col justify-start items-start gap-5 relative">
-    <div class="w-[1px] absolute top-0 left-0 bg-primary-400 z-10" :style="computedHeight"/>
+    <div class="w-[1px] absolute top-0 left-0 bg-primary-400 dark:bg-green-400 z-10" :style="computedHeight"/>
     <BioItem v-for="item in list" :question="item.title" :answer="item.text"/>
   </div>
 </template>

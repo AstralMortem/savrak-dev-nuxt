@@ -2,17 +2,17 @@
   <UICard>
     <div class="w-full h-full flex flex-row justify-between items-start">
       <div class="flex flex-col justify-start items-start gap-4">
-        <div class="flex flex-row justify-start items-center">
-          <UIImage :src="$props.logo" class=" w-16 h-16 gap-3"/>
-          <UIP size="5xl">{{ $props.title }}</UIP>
+        <div class="flex flex-row justify-start items-center gap-4">
+          <UIImage :src="$props.logo" class=" w-16 h-16 "/>
+          <UIP size="5xl" bold="semibold" color="text-neutral-900 dark:text-green-600">{{ $props.title }}</UIP>
         </div>
         <div class="flex flex-row justify-start items-center gap-2">
           <ProjectsTechStack v-for="item in $props.techStack" :name="item"/>
         </div>
-        <UIP>{{ $props.description }}</UIP>
-        <div class="flex flex-row justify-start items-center">
-          <UIButton trailing-icon="ph:arrow-right" :to="$props.previewLink" v-if="$props.previewLink">Preview</UIButton>
-          <UIButton trailing-icon="ph:github-logo" :to="$props.gitLink" v-if="$props.gitLink" only-icon rounded="full"/>
+        <UIP color="text-neutral-900 dark:text-white">{{ $props.description }}</UIP>
+        <div class="flex flex-row justify-start items-center gap-2">
+          <UIButton trailing-icon="ph:arrow-right" :to="$props.previewLink" v-if="$props.previewLink" color="bg-primary-600 dark:bg-green-600">Preview</UIButton>
+          <UIButton trailing-icon="ph:github-logo" :to="$props.gitLink" v-if="$props.gitLink" only-icon rounded="full" color="dark:bg-gray-200 dark:text-neutral-900 bg-neutral-900 text-white"/>
         </div>
       </div>
       <div>

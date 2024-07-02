@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-full">
+  <div class="w-full h-full overflow-x-hidden">
     <NavBar/>
     <UIImageWrapper class="overflow-x-clip"/>
     <div class="mx-[100px] flex flex-col gap-5 ">

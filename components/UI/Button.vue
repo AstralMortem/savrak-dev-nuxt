@@ -1,7 +1,7 @@
 <template>
-  <div class="h-min p-3 border border-zink-800 justify-center items-center gap-2 inline-flex text-white cursor-pointer" :class="[roundedVariant,$props.color, typeVariant]">
+  <div class="h-min p-3  justify-center items-center gap-2 inline-flex text-white cursor-pointer hover:shadow-lg hover:shadow-primary-400 dark:hover:shadow-green-400" :class="[roundedVariant,$props.color, typeVariant]">
       <UIIcon v-if="$props.leadingIcon" :name="$props.leadingIcon" class="text-2xl"/>
-      <UIP v-if="!$props.onlyIcon"><slot /></UIP>
+      <UIP v-if="!$props.onlyIcon" :color="$props.color" bold="semibold"><slot /></UIP>
       <UIIcon v-if="$props.trailingIcon" :name="$props.trailingIcon" class="text-2xl"/>
   </div>
 </template>
@@ -13,7 +13,7 @@ const props = defineProps({
   to: String,
   rounded:{
     type: String,
-    validation: (value) => ["full", "small", "square"].includes(value)
+    validation: (value:string) => ["full", "small", "square"].includes(value)
   },
   color: {
     type: String,
@@ -21,7 +21,7 @@ const props = defineProps({
   },
   type: {
     type: String,
-    validation: (value) => ["solid", "outlined", "soft"].includes(value)
+    validation: (value:string) => ["solid", "outlined", "soft"].includes(value)
   },
   onlyIcon:{
     type: Boolean,

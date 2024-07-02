@@ -4,25 +4,25 @@
       <div class="flex flex-col gap-8 justify-center items-center w-full h-full">
         <div class="flex flex-col justify-center items-center gap-6">
           <p
-            class="text-neutral-900 text-3xl font-bold font-['Play'] leading-10"
+            class="text-neutral-900 dark:text-green-600 text-3xl font-bold font-['Play'] leading-10"
           >
             FOP "SAVRAK BOGDAN MYKHAILOVICH"
           </p>
           <p
-            class="text-primary-600 text-8xl font-bold font-['Inter'] leading-10"
+            class="text-primary-600 dark:text-gray-200 text-8xl font-bold font-['Inter'] leading-10"
           >
             savrak.dev
           </p>
           <div
-            class="text-primary-600 text-base font-bold font-['Roboto Mono'] leading-none"
+            class="text-primary-600 dark:text-green-600 text-base font-bold font-['Roboto Mono'] leading-none"
           >
             FRONTEND DEVELOPER • REACT • C#
           </div>
         </div>
         <div class="flex flex-row justify-evenly items-center gap-4">
-          <UIButton only-icon leading-icon="ph:telegram-logo" rounded="full" />
-          <UIButton only-icon leading-icon="ph:linkedin-logo" rounded="full" />
-          <UIButton only-icon leading-icon="ph:github-logo" rounded="full" />
+          <UIButton only-icon leading-icon="ph:telegram-logo" rounded="full" color="bg-blue-600"/>
+          <UIButton only-icon leading-icon="ph:linkedin-logo" rounded="full" color="bg-blue-800"/>
+          <UIButton only-icon leading-icon="ph:github-logo" rounded="full" color="bg-neutral-800 dark:bg-white text-black"/>
         </div>
       </div>
     </UISection>
@@ -31,7 +31,7 @@
         <div class="flex flex-col justify-start items-start">
           <div class="flex flex-row justify-start items-center gap-5">
             <img src="/img/avatar.jpg" class="w-[100px] h-[100px] rounded-full"/>
-            <p class="text-2xl font-semibold font-['Inter'] text-neutral-900">Hi, my name is <span class="text-primary-600">Bogdan Savrak</span>. I`m <span class="text-primary-400">Frontend Developer</span></p>
+            <p class="text-2xl font-semibold font-['Inter'] text-neutral-900 dark:text-gray-200">Hi, my name is <span class="text-primary-600 dark:text-green-600">Bogdan Savrak</span>. I`m <span class="text-primary-400 dark:text-green-400">Frontend Developer</span></p>
           </div>
           <div class="flex flex-row justify-start items-start ml-10">
             <BioList :list="bioList"/>
@@ -80,6 +80,7 @@ const bioList = [{
 const projectList:Array<Project> = [{
   title: 'Project',
   description: 'Project',
+  previewLink: "sdf",
   gitLink: 'none',
   image: '/img/not-found.png',
   techStack: ['react', 'dick']
