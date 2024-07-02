@@ -26,6 +26,7 @@
         </div>
       </div>
     </UISection>
+    <NavScrollDivider/>
     <UISection title="Biography" description="FEW WORDS ABOUT ME" id="bio">
       <UICard>
         <div class="flex flex-col justify-start items-start">
