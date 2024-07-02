@@ -1,8 +1,8 @@
 <template>
-  <div class="h-10 p-3 border border-zink-800 justify-center items-center gap-2 inline-flex text-white cursor-pointer" :class="[roundedVariant,$props.color, typeVariant]">
-      <UIIcon v-if="$props.leadingIcon" :name="$props.leadingIcon"/>
+  <div class="h-min p-3 border border-zink-800 justify-center items-center gap-2 inline-flex text-white cursor-pointer" :class="[roundedVariant,$props.color, typeVariant]">
+      <UIIcon v-if="$props.leadingIcon" :name="$props.leadingIcon" class="text-2xl"/>
       <UIP v-if="!$props.onlyIcon"><slot /></UIP>
-      <UIIcon v-if="$props.trailingIcon" :name="$props.trailingIcon"/>
+      <UIIcon v-if="$props.trailingIcon" :name="$props.trailingIcon" class="text-2xl"/>
   </div>
 </template>
 

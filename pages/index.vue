@@ -19,7 +19,7 @@
             FRONTEND DEVELOPER • REACT • C#
           </div>
         </div>
-        <div class="flex flex-row justify-evenly items-center">
+        <div class="flex flex-row justify-evenly items-center gap-4">
           <UIButton only-icon leading-icon="ph:telegram-logo" rounded="full" />
           <UIButton only-icon leading-icon="ph:linkedin-logo" rounded="full" />
           <UIButton only-icon leading-icon="ph:github-logo" rounded="full" />
@@ -39,7 +39,7 @@
         </div>
       </UICard>
     </UISection>
-    <UISection title="My Projects" description="MADE WITH ❤️ AND PASSION" id="projects">
+    <UISection title="Projects" description="MADE WITH ❤️ AND PASSION" id="projects">
       <ProjectsList :data="projectList"/>
     </UISection>
     <UISection title="Hard Skills" description="LIST OF TECHNOLOGIES 🧑‍💻" id="skills">
