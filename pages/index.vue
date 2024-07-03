@@ -20,6 +20,7 @@
         </div>
       </div>
     </UISection>
+    <NavScrollDivider :num="1"/>
     <UISection title="Biography" description="FEW WORDS ABOUT ME" id="bio">
       <UICard>
         <div class="flex flex-col justify-start items-start">
@@ -33,12 +34,15 @@
         </div>
       </UICard>
     </UISection>
+    <NavScrollDivider :num="2"/>
     <UISection title="Projects" description="MADE WITH ❤️ AND PASSION" id="projects">
       <ProjectsList :data="projectList"/>
     </UISection>
+    <NavScrollDivider :num="3"/>
     <UISection title="Hard Skills" description="LIST OF TECHNOLOGIES 🧑‍💻" id="skills">
       <SkillsList :data="skillsList"/>
     </UISection>
+    <NavScrollDivider :num="4"/>
     <UISection title="Contacts" description="FEEL FREE TO CONTACT ME 😉" id="contacts">
       <div class="flex flex-col md:flex-row justify-center items-center gap-4">
         <UISociall title="telegram" logo="ph:telegram-logo" text="@BohdanSavrak"/>
