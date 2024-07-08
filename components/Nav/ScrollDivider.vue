@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-1.5 h-[230px] " ref="el">
+  <div class="relative w-1.5 h-[230px] hidden md:block " ref="el">
     <div class="w-1.5  bg-gradient-to-b from-primary-900 via-pink-500 to-emerald-500 rounded-full absolute z-10 top-0 left-0 " :style="styleHeight"/>
     <div class="w-1.5 h-[230px] bg-transparent rounded-full border border-neutral-900 absolute"/>
   </div>

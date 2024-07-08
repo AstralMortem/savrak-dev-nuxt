@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full flex flex-col items-center space-y-[50vh] mt-[50%] md:mt-0 md:space-y-4">
-    <UISection id="home">
+    <UISection id="home" class="h-screen">
       <div class="flex flex-col gap-8 justify-center items-center w-full h-full z-20">
         <div class="flex flex-col justify-center items-center gap-6">
           <p class="text-neutral-900 dark:text-green-600 text-xl lg:text-3xl font-bold font-['Play'] leading-6 text-center">
